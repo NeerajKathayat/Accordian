@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: skyblue;
+    padding: 40px;
+    line-height: 1.6rem;
+    font-family: sans-serif;
+}
+
+.Accordian{
+    background-color: white;
+    padding: 4px 16px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px rgb(255,205,255);
+    cursor: pointer;
+}
+
+
+.headingAcc{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin:12px;
+
+}
+
+.paraAcc{
+   color: #666;
+   max-height: 0;
+   overflow: hidden;
+   transition:max-height 0.2s ease-in-out ;
+}
+
+.paraAcc{
+    max-width: 95%;
+}
+
+/* .paraAcc.active{
+    max-height: fit-content;
+} */
+
+.down-arrow{
+    stroke: black;
+    margin-right:16px ;
+    transition: transform 0.2s;
+}
+
+.down-arrow.active{
+    transform: rotate(-180deg);
+}
